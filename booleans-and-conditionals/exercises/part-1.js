@@ -43,34 +43,9 @@ if (shuttleSpeed > 17500){
    console.log("Stable speed")
 }
 
-let fuelLevel = 30000;
-let engineTemperature = 2000;
 
-if (fuelLevel < 1000 || engineTemperature > 3500){
-   console.log("!!!!ENGINE FAILURE IMMINENT!!!!");
-} else if (fuelLevel > 20000 && engineTemperature <= 2500){
-   console.log("Full tank. Engines good");
-} else if (fuelLevel > 10000 && engineTemperature <= 2500){
-   console.log("Fuel level above 50%. Engines good");
-} else if (fuelLevel > 5000 && engineTemperature <= 2500){
-   console.log("Fuel level above 25%. Engines good");
-} else if (fuelLevel <= 5000 || engineTemperature > 2500){
-   if (fuelLevel >= 5000 && engineTemperature > 2500){
-      console.log("Fuel level above 25%. Engines running hot.");
-   } else if (fuelLevel < 5000 && engineTemperature <= 2500){
-      console.log("Check fuel level. Engines good");
-   } else {
-   console.log("Check fuel level. Engines running hot");
-   }
-}
 
-let commandOverride = false;
 
-if (fuelLevel > 20000 && engineIndicatorLight !== "red blinking" || commandOverride == true){
-   console.log("Cleared for launch!");
-} else {
-   console.log("Launch scrubbed!");
-}
 
 
 
