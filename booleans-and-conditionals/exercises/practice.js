@@ -1,6 +1,6 @@
 console.log(Boolean("true"));
 console.log(Boolean("TRUTH"));
-console.log(Boolean(""));
+console.log(Boolean(4 == "4"));
 console.log(Boolean(" "));
 console.log(Boolean(0));
 console.log(Boolean(1));
