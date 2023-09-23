@@ -1,13 +1,13 @@
-let food = "water bottles,meal packs,snacks,chocolate";
+let food = "water bottles/meal packs/snacks/chocolate";
 let equipment = "space suits,jet packs,tool belts,thermal detonators";
 let pets = "parrots,cats,moose,alien eggs";
 let sleepAids = "blankets,pillows,eyepatches,alarm clocks";
 
 //1) Use split to convert the strings into four cabinet arrays. Alphabetize the contents of each cabinet.
-let cabinetFood = food.split(",");
-let cabinetEquipment = equipment.split(",");
-let cabinetPets = pets.split(",");
-let cabinetSleepAids = sleepAids.split(",");
+let cabinetFood = food.split("/").sort();// creates cabinetFood array 
+let cabinetEquipment = equipment.split(",").sort();
+let cabinetPets = pets.split(",").sort();
+let cabinetSleepAids = sleepAids.split(",").sort();
 //2) Initialize a cargoHold array and add the cabinet arrays to it. Print cargoHold to verify its structure.
 let cargoHold = [cabinetFood, cabinetEquipment, cabinetPets, cabinetSleepAids];
 console.log(cargoHold);

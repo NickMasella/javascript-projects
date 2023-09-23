@@ -43,7 +43,7 @@ for (let i = 0; i < array1.length; i++){
 }
 
 //b
-for (let i = string.length; i >= 0; i--){
+for (let i = (string.length - 1); i >= 0; i--){
   console.log(string[i]);
 }
 
@@ -52,16 +52,16 @@ for (let i = string.length; i >= 0; i--){
   a. One array contains the even numbers, and the other holds the odds.
   b. Print the arrays to confirm the results. */
 
-let array2 = [2, 3, 13, 18, -5, 38, -10, 11, 0, 104];
+let array2 = [2, 3, 13, 18, -5, 38, -10, 11, 0, 104, "eraser"];
 let arrayEven = [];
 let arrayOdd = [];
 
 for (let i = 0; i < array2.length; i++){
   if (array2[i] % 2 === 0){
     arrayEven.push(array2[i]);
-  } else {
+  } else if (array2[i] % 2 === 1){
     arrayOdd.push(array2[i]);
-  }
+  } 
 }
 
 console.log(arrayEven , arrayOdd);
