@@ -23,7 +23,7 @@ function findMinValue(arr){
 function sortArray(arr){
   let numsSorted = [];
   while (arr.length > 0){
-    numsSorted.push(arr[arr.indexOf(findMinValue(arr))]);
+    numsSorted.push(findMinValue(arr));
     arr.splice(arr.indexOf(findMinValue(arr)), 1);
   }
   return numsSorted;

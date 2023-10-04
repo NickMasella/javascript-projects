@@ -12,6 +12,10 @@ let salamander = {
    age: 5
 };
 
+let superChimpTwo = {
+   name: "Brad",
+
+}
 
 // After you have created the other object literals, add the astronautID property to each one.
 
