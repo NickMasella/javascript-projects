@@ -59,7 +59,7 @@ console.log(alligator.statusCall());
 
 //Part 4 - Use the methods to boost Glad Gator’s status to Reserve or higher. How many tests will it take to reach Reserve status? How many to reach Accepted? Remember, scores cannot exceed 100%.
 
-function boostScore(candidate){
+function boostScoreTo90(candidate){
     let additionalScores = 0;
     while(candidate.average() < 90){
     candidate.addScore(100);
@@ -69,4 +69,15 @@ function boostScore(candidate){
     }   
     }
 }
-console.log(boostScore(alligator));
+function boostScoreTo80(candidate){
+    let additionalScores = 0;
+    while(candidate.average() < 80){
+    candidate.addScore(100);
+    additionalScores++;
+    if (candidate.average() >= 80){
+        return additionalScores
+    }   
+    }
+}
+console.log(boostScoreTo90(alligator));
+console.log(boostScoreTo80(alligator));
