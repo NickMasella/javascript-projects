@@ -45,4 +45,4 @@ let makingTheShip = new Manual('Top Secret Shuttle Building Manual', 'Redacted',
 // Code exercises 4 & 5 here:
 
 prideAndPrejudice.checkout(5);
-makingTheShip.dispose();
+makingTheShip.dispose(2023);
