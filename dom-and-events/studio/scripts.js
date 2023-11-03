@@ -3,7 +3,7 @@
 function takeOff(){
     let imgObj = document.getElementById('rocket');
     imgObj.style.position = 'absolute';
-    imgObj.style.left = '0px';
+    imgObj.style.left = '50%';
     imgObj.style.right = '0px';
     imgObj.style.bottom = '0px';
     let flightStatus = document.getElementById('flightStatus');
