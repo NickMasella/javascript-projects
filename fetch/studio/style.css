@@ -3,6 +3,9 @@
     height: 100px;
     float:right;
 }
+.active{
+    color:green;
+}
 
 .astronaut {
     border: 1px solid black;
